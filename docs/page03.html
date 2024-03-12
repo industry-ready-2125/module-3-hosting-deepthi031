@@ -3,15 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Tips</title>
+    <title>Music Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000; /* Black background color */
+            color: #fff; /* White text color */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000; /* Black header background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for header */
+        }
+
+        #greeting {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #bell-icon,
+        #settings-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            gap: 10px; /* Small gap between buttons */
+            margin: 20px 0;
+        }
+
+        .button {
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 15px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .button:hover {
+            background-color: #555; /* Darker color on hover */
+        }
+
+        .album-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .album {
+            width: 30%;
+            margin: 10px;
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Handy Travel Tips</h1>
-    <p>Get useful travel tips to make your journey more enjoyable and stress-free.</p>
-    <a href="index.html">Go to Home</a>
-    <a href="page02.html">Destinations</a>
-    <a href="page03.html">Adventure Tours</a>
-    <a href="page04.html">Cuisine Adventures</a>
-    <a href="page05.html">Contact Us</a>
+
+    <header>
+        <div id="greeting">Good Afternoon</div>
+        <div>
+            <img src="https://png.pngtree.com/png-vector/20190321/ourlarge/pngtree-vector-settings-icon-png-image_854999.jpg" alt="Bell Icon" id="bell-icon">
+            <img src="https://icon-library.com/images/about-me-icon-png/about-me-icon-png-25.jpg" alt="Settings Icon" id="settings-icon">
+        </div>
+    </header>
+
+    <div class="navigation-buttons">
+        <button class="button">Music</button>
+        <button class="button">Podcasts</button>
+    </div>
+
+    <div class="album-section">
+        <!-- Album 1 -->
+        <div class="album">
+            <a href="page04.html"> <!-- Added anchor tag with href attribute -->
+                <img src="https://s.yimg.com/fz/api/res/1.2/IjdSpZ.AIv6tU0PI39AAWA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/9b784f11-8402-3b52-99d0-942a6d91ea13/t_1024x1024" alt="Album 1">
+                <p>Sita ramam</p>
+            </a>
+        </div>
+
+        <!-- Album 2 -->
+        <div class="album">
+            <img src="https://s.yimg.com/fz/api/res/1.2/oKsiYB_Ft4Fj15Sw.m7yhQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/276c73dd-4cfc-3a19-bfa8-43068a291d10/t_1024x1024" alt="Album 2">
+            <p>hi nanna</p>
+        </div>
+
+        <!-- Album 3 -->
+        <div class="album">
+            <img src="https://s.yimg.com/fz/api/res/1.2/EBIPWrav.BwzmW39O_GKaw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/b06da4d6-dbbe-332d-8d94-9e725c5471df/t_1024x1024" alt="Album 3">
+            <p>MAD</p>
+        </div>
+
+        <!-- Album 4 -->
+        <div class="album">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ReuJhEUJj4TsaaKE_CsaBQHaJQ&pid=Api&P=0&h=220" alt="Album 4">
+            <p>oye</p>
+        </div>
+
+        <!-- Album 5 -->
+        <div class="album">
+            <img src="https://s.yimg.com/fz/api/res/1.2/UITEuGYhoU.J.blhlDZvRg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/0bd25688-1e06-35cb-a119-2778de695558/t_1024x1024" alt="Album 5">
+            <p>Tiger</p>
+        </div>
+
+        <!-- Album 6 -->
+        <div class="album">
+            <img src="https://s.yimg.com/fz/api/res/1.2/mxQHzuu5czY3HXVn4KG42w--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/a2830c0f-449e-38db-9753-aab369c8056e/t_1024x1024" alt="Album 6">
+            <p>Guntur kaaram</p>
+        </div>
+    </div>
+
+    <!-- Rest of your webpage content goes here -->
+
 </body>
 </html>
