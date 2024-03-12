@@ -3,15 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations</title>
+    <title>Phone Number Verification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000; /* Black background color */
+            color: white; /* White text color */
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #000; /* Black header color */
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .country-name-selector,
+        .phone-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #country-code {
+            width: 10%; /* Adjusted width */
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #country-names option[value="UK"] {
+            font-size: 14px; /* Smaller font size for UK option */
+        }
+        #country-names,
+        #phone-number {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #808080; /* Gray color */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        /* Added style for anchor tag */
+        a.button-link {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Discover Exciting Destinations</h1>
-    <p>Explore our curated list of amazing travel destinations around the globe.</p>
-    <a href="index.html">Go to Home</a>
-    <a href="page02.html">Travel Tips</a>
-    <a href="page03.html">Adventure Tours</a>
-    <a href="page04.html">Cuisine Adventures</a>
-    <a href="page05.html">Contact Us</a>
+
+    <header>
+        <h1>Enter your phone number</h1>
+    </header>
+
+    <main>
+        <div class="country-name-selector">
+            <select id="country-names">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="phone-input">
+            <select id="country-code">
+                <option value="+91">+91 (India)</option>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+        </div>
+        <p>We will send you a code by SMS to confirm your phone number.</p>
+        <!-- Added anchor tag for Next button -->
+        <a href="page03.html" class="button-link"><button onclick="sendVerificationCode()">Next</button></a>
+    </main>
+
+    <script>
+        function sendVerificationCode() {
+            // Add logic to send verification code via SMS
+            alert('Verification code sent!'); // Placeholder for actual code
+        }
+    </script>
+
 </body>
 </html>
