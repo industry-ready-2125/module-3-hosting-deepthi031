@@ -3,15 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuisine Adventures</title>
+    <title>Single Album Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000; /* Black color */
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 50px 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .album-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .album-card {
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .album-card:hover {
+            transform: scale(1.05);
+        }
+
+        .album-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #333;
+        }
+
+        .album-description {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #000; /* Black background */
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Explore Cuisine Adventures</h1>
-    <p>Indulge in the diverse culinary delights of different regions during your travels.</p>
-    <a href="index.html">Go to Home</a>
-    <a href="page02.html">Destinations</a>
-    <a href="page03.html">Travel Tips</a>
-    <a href="page04.html">Adventure Tours</a>
-    <a href="page05.html">Contact Us</a>
+
+    <header>
+        <img src="https://i.pinimg.com/originals/f0/5c/bc/f05cbc8c0f8b075d2b4f1f68fee49649.jpg" alt="Spotify Logo">
+    </header>
+
+    <main>
+        <h1>Hi nanna</h1>
+        <div class="album-container">
+            <div class="album-card">
+                <img src="https://s.yimg.com/fz/api/res/1.2/oKsiYB_Ft4Fj15Sw.m7yhQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODA7cHhvZmY9NTA7cHlvZmY9MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/276c73dd-4cfc-3a19-bfa8-43068a291d10/t_1024x1024" alt="Album Cover">
+                <div class="album-description">
+                    <h3>listen now</h3>
+                    <p>Sid Sriram</p>
+                    <p>Release Year: 2022</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
